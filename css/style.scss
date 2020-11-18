@@ -3,9 +3,169 @@
     margin: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+}
+img {
+    display: none;
+}
 .register {
     text-decoration: none;
     color: #eee;
     display: block;
-    
+    background-color: #0036A3;
+    text-align: center;
+    border: 1px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.nav {
+    padding: 38px 30px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .logo-container {
+        width: 40%;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .button-top {
+        height: 2em;
+        font-size: 12px;
+        padding: 0.6em 1.4em;
+        font-weight: bold;
+        padding-top: 0.4em;
+    }
+}
+
+.landing-page {
+    padding: 0 30px;
+    text-align: center;
+    h1 {
+        font-weight: 400;
+        font-weight: 2em;
+        margin-bottom: 20px;
+        span {
+            font-weight: bold;
+        }
+    }
+    .button-main {
+        position: relative;
+        margin: 40px auto;
+        display: block;
+        width: 50%;
+        padding: 0.6em 1em;
+        font-weight: bold;
+        font-size: 1em;
+    }
+}
+
+.feature {
+    padding: 20px 30px;
+    margin: 10px 0;
+    h2 {
+        margin-bottom: 10px;
+    }
+    p {
+        font-weight: 300;
+    }
+}
+
+.feature-odd {
+    background-color: #0036A3;
+    color: #eee;
+}
+
+.feature-even {
+    background-color: #ddd;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    background-color: #BBB;
+    padding: 30px;
+}
+
+@media all and (min-width: 960px) {
+    body {
+        background: url("../assets/bg.jpg") rgba(244, 202, 21, 0.2);
+        background-blend-mode: multiply;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .start {
+        height: 100vh;
+        .nav {
+            position: relative;
+            z-index: 1;
+            padding: 2em 8em;
+            .logo-container {
+                width: 15%;
+            }
+            .button-top {
+                padding: 0.5em 1.2em;
+                font-size: 1em;
+                p {
+                    display: inline;
+                    line-height: 2em;
+                }
+            }
+        }
+        .landing-page {
+            h1 {
+                font-size: 3.8em;
+                width: 45%;
+                margin: 1em auto;
+                margin-top: 0.7em;
+                line-height: 1.4em;
+            }
+            .button-main {
+                font-size: 1.5em;
+                width: 20%;
+            }
+        }
+    }   
+    .feature {
+        padding: 4em 8.5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .text-container {
+            h2 {
+                font-size: 2em;
+            }
+            p {
+                width: 75%;
+                font-size: 1.4em;
+                font-weight: 300;
+            }
+        }
+        .img-container {
+            position: relative;
+            width: 75%;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+    .feature-even {
+        position: relative;
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
 }
