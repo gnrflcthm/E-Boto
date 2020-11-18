@@ -10,7 +10,11 @@ html, body {
 }
 
 body {
-  background-color: rgba(244, 202, 21, 0.2);
+  background: url("../assets/bg.jpg") rgba(244, 202, 21, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 img {
