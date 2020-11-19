@@ -31,60 +31,72 @@ img {
     text-transform: uppercase;
 }
 
-.nav {
-    padding: 38px 30px;
-    padding-bottom: 0;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    .logo-container {
-        width: 40%;
-        img {
-            display: block;
-            width: 100%;
-        }
-    }
-    .button-top {
-        height: 2em;
-        font-size: 12px;
-        padding: 0.6em 1.4em;
-        font-weight: bold;
-        padding-top: 0.4em;
-    }
-}
-
-.landing-page {
-    padding: 0 30px;
-    text-align: center;
-    h1 {
-        font-weight: 400;
-        font-weight: 2em;
-        margin-bottom: 20px;
-        span {
-            font-weight: bold;
-        }
-    }
-    .button-main {
+.start {
+    height: 100vh;
+    .nav {
+        padding: 38px 30px;
+        padding-bottom: 0;
         position: relative;
-        margin: 40px auto;
-        display: block;
-        width: 50%;
-        padding: 0.6em 1em;
-        font-weight: bold;
-        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10vh;
+        .logo-container {
+            width: 40%;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .button-top {
+            height: 2em;
+            font-size: 12px;
+            padding: 0.6em 1.4em;
+            font-weight: bold;
+            padding-top: 0.4em;
+        }
+    }
+
+    .landing-page {
+        padding: 0 30px;
+        text-align: center;
+        h1 {
+            font-weight: 400;
+            font-size: 2.5em;
+            margin-bottom: 15vh;
+            span {
+                font-weight: bold;
+            }
+        }
+        .button-main {
+            position: relative;
+            margin: 40px auto;
+            display: block;
+            width: 50%;
+            padding: 0.6em 1em;
+            font-weight: bold;
+            font-size: 1em;
+        }
     }
 }
 
 .feature {
-    padding: 20px 30px;
+    padding: 0px 30px;
     margin: 10px 0;
-    h2 {
-        margin-bottom: 10px;
-    }
-    p {
-        font-weight: 300;
+    height: 35vh;
+    .text-container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-weight: 300;
+        }
     }
 }
 
@@ -118,6 +130,7 @@ footer {
             position: relative;
             z-index: 1;
             padding: 2em 8em;
+            padding-bottom: 0;
             .logo-container {
                 width: 15%;
             }
@@ -135,7 +148,7 @@ footer {
                 font-size: 3.8em;
                 width: 45%;
                 margin: 1em auto;
-                margin-top: 0.7em;
+                margin-top: 0em;
                 line-height: 1.4em;
             }
             .button-main {
@@ -149,7 +162,8 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        height: 40vh;
         .text-container {
             h2 {
                 font-size: 2em;
@@ -162,7 +176,6 @@ footer {
         }
         .img-container {
             position: relative;
-            width: 75%;
             img {
                 width: 100%;
                 display: block;
@@ -175,6 +188,37 @@ footer {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+    .start {
+        .nav {
+            .logo-container {
+                width: 30%;
+            }
+            .button-top {
+                padding: 0.6em 1.9em;
+                padding-top: 0.3em;
+                font-size: 1.2em;
+            }
+        }
+        .landing-page {
+            font-size: 1.7em;
+        }
+    }
+    .feature {
+        height: 45vh;
+        .text-container {
+            padding: 0px 1.6em;
+            h2 {
+                font-size: 2.5em;
+            }
+            p {
+                width: 100%;
+                font-size: 2em;
+            }
         }
     }
 }

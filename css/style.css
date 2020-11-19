@@ -32,10 +32,14 @@ img {
   text-transform: uppercase;
 }
 
-.nav {
+.start {
+  height: 100vh;
+}
+
+.start .nav {
   padding: 38px 30px;
   padding-bottom: 0;
-  margin-bottom: 40px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,18 +53,19 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10vh;
 }
 
-.nav .logo-container {
+.start .nav .logo-container {
   width: 40%;
 }
 
-.nav .logo-container img {
+.start .nav .logo-container img {
   display: block;
   width: 100%;
 }
 
-.nav .button-top {
+.start .nav .button-top {
   height: 2em;
   font-size: 12px;
   padding: 0.6em 1.4em;
@@ -68,22 +73,22 @@ img {
   padding-top: 0.4em;
 }
 
-.landing-page {
+.start .landing-page {
   padding: 0 30px;
   text-align: center;
 }
 
-.landing-page h1 {
+.start .landing-page h1 {
   font-weight: 400;
-  font-weight: 2em;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 15vh;
 }
 
-.landing-page h1 span {
+.start .landing-page h1 span {
   font-weight: bold;
 }
 
-.landing-page .button-main {
+.start .landing-page .button-main {
   position: relative;
   margin: 40px auto;
   display: block;
@@ -94,15 +99,31 @@ img {
 }
 
 .feature {
-  padding: 20px 30px;
+  padding: 0px 30px;
   margin: 10px 0;
+  height: 35vh;
 }
 
-.feature h2 {
+.feature .text-container {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feature .text-container h2 {
   margin-bottom: 10px;
 }
 
-.feature p {
+.feature .text-container p {
   font-weight: 300;
 }
 
@@ -137,6 +158,7 @@ footer {
     position: relative;
     z-index: 1;
     padding: 2em 8em;
+    padding-bottom: 0;
   }
   .start .nav .logo-container {
     width: 15%;
@@ -153,7 +175,7 @@ footer {
     font-size: 3.8em;
     width: 45%;
     margin: 1em auto;
-    margin-top: 0.7em;
+    margin-top: 0em;
     line-height: 1.4em;
   }
   .start .landing-page .button-main {
@@ -172,9 +194,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 40vh;
   }
   .feature .text-container h2 {
     font-size: 2em;
@@ -186,7 +208,6 @@ footer {
   }
   .feature .img-container {
     position: relative;
-    width: 75%;
   }
   .feature .img-container img {
     width: 100%;
@@ -206,6 +227,33 @@ footer {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .start .nav .logo-container {
+    width: 30%;
+  }
+  .start .nav .button-top {
+    padding: 0.6em 1.9em;
+    padding-top: 0.3em;
+    font-size: 1.2em;
+  }
+  .start .landing-page {
+    font-size: 1.7em;
+  }
+  .feature {
+    height: 45vh;
+  }
+  .feature .text-container {
+    padding: 0px 1.6em;
+  }
+  .feature .text-container h2 {
+    font-size: 2.5em;
+  }
+  .feature .text-container p {
+    width: 100%;
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=style.css.map */
