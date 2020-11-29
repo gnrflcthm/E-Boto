@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eee;
+}
+
+body {
+  background: url("../assets/bg.jpg") rgba(244, 202, 21, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+img {
+  display: none;
+}
+
+.header{
+  height: 30vh;
+}
+
+.header img{
+
+  display: block;
+  width: 16%;
+  padding: 38px 30px;
+  padding-bottom: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10vh;
+}
+
+
+.register {
+  text-decoration: none;
+  color: #eee;
+  display: block;
+  background-color: #0036A3;
+  text-align: center;
+  border: 1px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.start {
+  height: 100vh;
+}
+
+.start .nav {
+  padding: 38px 30px;
+  padding-bottom: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10vh;
+}
+
+.start .nav .logo-container {
+  width: 40%;
+}
+
+.header .start .nav .logo-container img {
+  display: block;
+  width: 100%;
+}
+
+.start .nav .button-top {
+  height: 2em;
+  font-size: 12px;
+  padding: 0.6em 1.4em;
+  font-weight: bold;
+  padding-top: 0.4em;
+}
+
+.start .landing-page {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.start .landing-page h1 {
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-bottom: 15vh;
+}
+
+.start .landing-page h1 span {
+  font-weight: bold;
+}
+
+.start .landing-page .button-main {
+  position: relative;
+  margin: 40px auto;
+  display: block;
+  width: 50%;
+  padding: 0.6em 1em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.feature {
+  padding: 0px 30px;
+  margin: 10px 0;
+  height: 35vh;
+}
+
+.feature .text-container {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feature .text-container h2 {
+  margin-bottom: 10px;
+}
+
+.feature .text-container p {
+  font-weight: 300;
+}
+
+.feature-odd {
+  background-color: #0036A3;
+  color: #eee;
+}
+
+.feature-even {
+  background-color: #ddd;
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+  background-color: #BBB;
+  padding: 30px;
+}
+
+.footertxt {
+  text-decoration: none;
+  color: white;
+  font-size: 120%;
+}
+
+a.footertxt:hover{
+  color: yellow;
+  text-decoration: underline;
+  font-size: 125%;
+}
+
+@media all and (min-width: 960px) {
+  body {
+    background: url("../assets/bg.jpg") rgba(244, 202, 21, 0.2);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .start {
+    height: 100vh;
+  }
+  .start .nav {
+    position: relative;
+    z-index: 1;
+    padding: 2em 8em;
+    padding-bottom: 0;
+  }
+  .start .nav .logo-container {
+    width: 15%;
+  }
+  .start .nav .button-top {
+    padding: 0.5em 1.2em;
+    font-size: 1em;
+  }
+  .start .nav .button-top p {
+    display: inline;
+    line-height: 2em;
+  }
+  .start .landing-page h1 {
+    font-size: 3.8em;
+    width: 45%;
+    margin: 1em auto;
+    margin-top: 0em;
+    line-height: 1.4em;
+  }
+  .start .landing-page .button-main {
+    font-size: 1.5em;
+    width: 20%;
+  }
+  .feature {
+    padding: 4em 8.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 40vh;
+  }
+  .feature .text-container h2 {
+    font-size: 2em;
+  }
+  .feature .text-container p {
+    width: 75%;
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+  .feature .img-container {
+    position: relative;
+  }
+  .feature .img-container img {
+    width: 100%;
+    display: block;
+  }
+  .feature-even {
+    position: relative;
+  }
+  .feature-even .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .start .nav .logo-container {
+    width: 30%;
+  }
+  .start .nav .button-top {
+    padding: 0.6em 1.9em;
+    padding-top: 0.3em;
+    font-size: 1.2em;
+  }
+  .start .landing-page {
+    font-size: 1.7em;
+  }
+  .feature {
+    height: 45vh;
+  }
+  .feature .text-container {
+    padding: 0px 1.6em;
+  }
+  .feature .text-container h2 {
+    font-size: 2.5em;
+  }
+  .feature .text-container p {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media (max-width: 460px) {
+  .feature .text-container p {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=readmore.css.map */
