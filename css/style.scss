@@ -157,37 +157,31 @@ footer {
             }
         }
     }   
-    .feature {
-        padding: 4em 8.5em;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        height: 40vh;
-        .text-container {
-            h2 {
-                font-size: 2em;
+    .features {
+        padding: 1em;
+        padding-top: 2em;
+        display: grid;
+        gap: 1.4em;
+        grid-template-columns: auto auto auto;
+        
+        .feature {
+            margin: 0 1.4em;
+            padding: 3em 1.3em;
+            text-align: center;
+            height: auto;
+            .img-container {
+                position: relative;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                img {
+                    display: inline-block;
+                    width: 45%;
+                }
             }
-            p {
-                width: 75%;
-                font-size: 1.4em;
-                font-weight: 300;
-            }
-        }
-        .img-container {
-            position: relative;
-            img {
-                width: 100%;
+            .text-container {
                 display: block;
+                height: auto;
             }
-        }
-    }
-    .feature-even {
-        position: relative;
-        .text-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
         }
     }
 }
