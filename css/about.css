@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+.aboutSection {
+  margin:0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #212121;
+  background-color: rgba(244, 202, 21, 0.2);
+}
+
+.aboutTitle{
+	font-family: 'Montserrat', sans-serif;
+	width:100%;
+	padding-top:2%;
+	padding-bottom:2%;
+  text-align: center;
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+/*STYLES - FIRST FIVE BOXES */
+.first-five {
+  padding: 40px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+
+
+}
+
+.first-five li {
+  position: relative;
+  padding: 24px;
+  border-radius: 4px;
+  background-color:  rgba(244, 202, 21, 0.5);
+  border: 1px solid black;
+
+  will-change: transform;
+  transition: transform 150ms ease;
+}
+
+.first-five li:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+}
+
+.first-five li a {
+  text-decoration: none;
+}
+
+.first-five li img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.first-five li h1 {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.box-jacob-taino{
+  grid-column-start: 2;
+}
+
+.box-gian-thiam{
+  grid-column-start: 4;
+}
+/*END OF STYLES FOR FIRST FIVE BOXES*/
+
+.section-two{
+    background-color: rgba(244, 202, 21, 0.2);
+    padding: 1em 3em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*STYLES - RESPONSIVE CSS */
+
+@media (max-width: 1200px) {
+  .first-five {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .box-jacob-taino{
+    grid-column-start: auto;
+  }
+  .box-gian-thiam{
+    grid-column-start: auto;
+  }
+  .section-two{
+    font-size: 1.2em;
+  }
+}
+}
+
+@media (max-width: 900px) {
+   .first-five{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 460px) {
+  .first-five {
+    grid-template-columns: 1fr;
+  }
+  .box-jacob-taino{
+    grid-column-start: auto;
+  }
+  .box-gian-thiam{
+    grid-column-start: auto;
+  }
+  .section-two{
+    font-size: 1.2em;
+  }
+}
+
+/*STYLES - RESPONSIVE CSS */
