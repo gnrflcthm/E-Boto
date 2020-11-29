@@ -20,6 +20,7 @@ body {
 img {
     display: none;
 }
+
 .register {
     text-decoration: none;
     color: #eee;
@@ -112,8 +113,9 @@ img {
 
 footer {
     text-align: center;
-    background-color: #BBB;
+    background-color: rgba(244, 202, 21, 0.2);
     padding: 30px;
+    font-weight: 700;
 }
 
 @media all and (min-width: 960px) {
@@ -160,11 +162,12 @@ footer {
     .features {
         padding: 1em;
         padding-top: 2em;
-        display: grid;
-        gap: 1.4em;
-        grid-template-columns: auto auto auto;
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1.5em;
         .feature {
+            flex: 1;
             margin: 0 1.4em;
             padding: 3em 1.3em;
             text-align: center;
@@ -182,6 +185,23 @@ footer {
                 display: block;
                 height: auto;
             }
+        }
+    }
+    .read-more {
+        text-align: center;
+        margin-bottom: 40px;
+        .more-btn {
+            display: inline-block;
+            background-color: #0036A3;
+            color: #eee;
+            border-radius: 8px;
+            text-decoration: none;
+            padding: 0.6em 1em;
+            font-weight: bold;
+            font-size: 1em;
+            font-size: 1.5em;
+            width: 15%;
+            
         }
     }
 }

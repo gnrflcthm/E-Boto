@@ -139,8 +139,9 @@ img {
 
 footer {
   text-align: center;
-  background-color: #BBB;
+  background-color: rgba(244, 202, 21, 0.2);
   padding: 30px;
+  font-weight: 700;
 }
 
 @media all and (min-width: 960px) {
@@ -185,13 +186,22 @@ footer {
   .features {
     padding: 1em;
     padding-top: 2em;
-    display: -ms-grid;
-    display: grid;
-    gap: 1.4em;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5em;
   }
   .features .feature {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin: 0 1.4em;
     padding: 3em 1.3em;
     text-align: center;
@@ -209,6 +219,22 @@ footer {
   .features .feature .text-container {
     display: block;
     height: auto;
+  }
+  .read-more {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .read-more .more-btn {
+    display: inline-block;
+    background-color: #0036A3;
+    color: #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1em;
+    font-size: 1.5em;
+    width: 15%;
   }
 }
 
